@@ -1,0 +1,6 @@
+env/
+venv/
+ENV/
+.venv/
+__pypackages__/
+
