@@ -1,1 +1,1 @@
-Simple python script that saves all urls from a provided url and saves it to a txt file
+Simple python script that scrapes all urls from a provided link and saves it to a txt file
