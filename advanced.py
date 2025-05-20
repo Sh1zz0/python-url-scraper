@@ -1,16 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
 
-visited_urls = set()
 
-def spider_urls(url, keyword, output_file="scraped_rls.txt"):
+
+def spider_urls(url, keyword, output_file="scraped_urls.txt"):
     
     try:
         response = requests.get(url)
     except:
         print(f"Request failed {url}")
         return
-
 
     soup =  BeautifulSoup(response.content, 'html.parser')
 

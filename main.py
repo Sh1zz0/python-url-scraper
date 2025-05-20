@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_page(url, output_file="scraped_rls.txt"):
+def get_page(url, output_file="scraped_urls.txt"):
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
 
